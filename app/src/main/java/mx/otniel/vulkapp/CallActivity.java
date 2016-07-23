@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-public class CallService extends AppCompatActivity {
+public class CallActivity extends AppCompatActivity {
+
+    private static final String TAG = CallActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +22,7 @@ public class CallService extends AppCompatActivity {
         new android.os.Handler().postDelayed(
             new Runnable() {
                 public void run() {
-                    Log.i("tag", "This'll run 5 segs later");
+                    Log.i(TAG, "This'll run 5 segs later");
                     int random = (int)(Math.random() * 2);
                     boolean busy = (random == 1);
                     Log.i("tag", "Busy..." + busy);

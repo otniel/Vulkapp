@@ -18,7 +18,7 @@ public class AskServiceActivity extends AppCompatActivity {
 
     public void askForService(View view) {
         Log.d(TAG, "askForService: wuwu");
-        Intent intent = new Intent(this, CallService.class);
+        Intent intent = new Intent(this, CallActivity.class);
         startActivity(intent);
     }
 }
