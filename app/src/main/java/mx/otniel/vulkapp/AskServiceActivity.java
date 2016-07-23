@@ -16,9 +16,13 @@ public class AskServiceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ask_service);
     }
 
-    public void askForService(View view) {
-        Log.d(TAG, "askForService: wuwu");
+    public void callToVulka(View view) {
         Intent intent = new Intent(this, CallActivity.class);
+        startActivity(intent);
+    }
+
+    public void callMeVulka(View view) {
+        Intent intent = new Intent(this, CallMeActivity.class);
         startActivity(intent);
     }
 }

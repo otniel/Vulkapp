@@ -27,7 +27,6 @@ public class CallActivity extends AppCompatActivity {
                     boolean busy = (random == 1);
                     Log.i("tag", "Busy..." + busy);
                     if(busy) {
-
                         textView.setText("Linea ocupada, en breve te llamamos.");
                     } else {
                         textView.setText("Te han llamado... continuando.");
